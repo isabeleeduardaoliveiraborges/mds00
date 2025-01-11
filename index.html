@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Carrossel com Logo e Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/meu estilo.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="js/bootstrap.js">
+</head>
+<body>
+
+  <header class="menu-header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="#">
+          <img src="img/image.png" alt="Logo" class="logo-img">
+        </a>
+      </div>
+      <!-- Botão e Menu -->
+      <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pilates Funcional</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Localização</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container marketing">
+    <!-- Carrossel ajustar a imagem 1 -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/imagm1.jpeg" class="d-block w-100" alt="Imagem 1">
+        </div>
+        <div class="carousel-item">
+          <img src="img/imagem2.jpeg" class="d-block w-100" alt="Imagem 2">
+        </div>
+        <div class="carousel-item">
+          <img src="img/imagem3.jpeg" class="d-block w-100" alt="Imagem 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+
+<dir>
+<!--menu arrumar o jeito que esta abrindo  e o tamanho da logo -->
+    <div class="card-group">
+      <div class="card">
+        
+        <div class="card-body">
+          <h5 class="card-title">pilates  </h5>
+          <p class="card-text">
+            Pilates  combina o Pilates tradicional com exercícios que fortalecem, melhoram a postura e a mobilidade para atividades diárias. Usando acessórios como bolas e elásticos, trabalha o corpo de forma integrada, prevenindo lesões e promovendo condicionamento completo.</p>
+        </div>
+      </div>
+      <div class="card">
+        
+        <div class="card-body">
+          <h5 class="card-title"> terapias manuais </h5>
+          <p class="card-text">*liberaçao miofascial</p>
+                             <p>*massagem relaxante</p>
+                             <p>*Drenagem</p>
+                             <p>*analgesia</p>
+                            <p>*ventosa terapia</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </dir>
+    <!-- cinco colunas de texto abaixo do carrossel -->
+    <div class="row mt-4">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+        </svg>
+        <h2 class="fw-normal">liberaçao miofascial </h2>
+        <p>Liberação Miofascial
+          Indicada para aliviar tensões e melhorar a mobilidade, a liberação miofascial utiliza pressões específicas para tratar a fáscia, um tecido conectivo que pode causar dores e rigidez quando está tensionado.</p>
+        
+      </div><!-- /.col-lg-4 -->
+    
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+        </svg>
+        <h2 class="fw-normal">massagem relaxante</h2>
+        <p>Massagem Relaxante
+          Ideal para combater o estresse e proporcionar relaxamento profundo. Essa técnica promove a circulação sanguínea, reduz tensões musculares e melhora o estado emocional.</p>
+        
+      </div><!-- /.col-lg-4 -->
+    
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+        </svg>
+        <h2 class="fw-normal">drenagem</h2>
+        <p>Drenagem Linfática
+          Massagem leve e ritmada que estimula o sistema linfático, auxiliando na redução de inchaços, eliminação de toxinas e melhora da circulação, sendo amplamente utilizada em tratamentos pós-cirúrgicos e estéticos</p>
+        
+      </div><!-- /.col-lg-4 -->
+    
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+        </svg>
+        <h2 class="fw-normal">analgesia</h2>
+        <p>Analgesia
+          Focada no alívio de dores, a analgesia utiliza técnicas específicas, como aplicação de calor, frio ou manipulações suaves, para reduzir desconfortos musculares e articulares</p>
+        
+      </div><!-- /.col-lg-4 -->
+    
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+        </svg>
+        <h2 class="fw-normal">ventosa terapia </h2>
+        <p>Com o uso de ventosas aplicadas à pele, essa técnica melhora a circulação, libera tensões musculares e ajuda na eliminação de toxinas, além de contribuir para o alívio de dores e desconfortos.</p>
+
+         <p> Cada uma dessas terapias é adaptada às necessidades individuais, promovendo equilíbrio entre o corpo e a mente. Escolha a mais adequada para o seu objetivo e descubra os benefícios que essas técnicas podem trazer para sua saúde.</p>
+        
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+    
+
+  </div><!-- /whatizapp e istagram-->
+  <a href="https://wa.me/5511974386850" target="_blank" class="whatsapp-btn">
+    <img src="img/zap.png" alt="WhatsApp" style="width: 50px; height: 50px;">
+  </a>
+  <a href="https://www.instagram.com/espacompilates?igsh=ZmJkOTBrYmN6OGlo" target="_blank" class="instagram-btn">
+    <img src="img/ff0fac1a-0787-4471-aff2-5ec04eda3974-removebg-preview.png" alt="Instagram" style="width: 50px; height: 50px;">
+  </a>
+  
+  <body>
+    <p>Confira nossa localização no mapa abaixo:</p>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.746116579068!2d-46.55120092445894!3d-23.582640067276197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4236b59ac4af%3A0x7d0edb9fa8534c98!2sR.%20Conselheiro%20Justino%2C%20304%20-%20Campestre%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009070-720!5e0!3m2!1spt-BR!2sbr!4v1697035483084!5m2!1spt-BR!2sbr"
+        width="600"
+        height="450"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</body>
+  <!-- RODAPÉ -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Voltar ao topo</a></p>
+    <p>&copy; 2017–2024 Company, Inc. &middot; <a href="#">Política de privacidade</a> &middot; <a href="#">Termos de uso</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+

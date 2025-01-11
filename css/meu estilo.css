@@ -1,0 +1,111 @@
+
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+
+}
+
+.navbar-toggler-icon {
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 40px;
+  }
+  .navbar-nav .nav-link {
+    margin: 5px 0;
+  }
+  .menu-header {
+    padding: 5px 0;
+  }
+}
+
+/* Carrossel */
+.carousel-inner img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+/* Cards */
+.card-title {
+  font-size: 1.25rem;
+  color: #007bff;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Seções de informações */
+.row h2 {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.row p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Botões de redes sociais */
+.whatsapp-btn img,
+.instagram-btn img {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.whatsapp-btn {
+  bottom: 20px;
+  left: 20px;
+}
+
+.instagram-btn {
+  bottom: 20px;
+  left: 80px;
+}
+
+/* Mapa */
+iframe {
+  margin: 20px 0;
+  border: 0;
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+}
+.logo-img {
+      /* Ajuste o tamanho desejado */
+      width: 70px; /* Altere conforme necessário */
+      height: auto; /* Mantém a proporção */
+    }
+  
+
+/* Footer */
+footer {
+  background-color: #f8f9fa;
+  border-top: 2px solid #ddd;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
