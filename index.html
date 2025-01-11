@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="css/meu estilo.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="js/bootstrap.js">
-</head>
+  <link rel="stylesheet" href="img/">
+  
 <body>
 
   <header class="menu-header">
@@ -30,13 +31,14 @@
               <a class="nav-link" href="#">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pilates Funcional</a>
+              <a class="nav-link" href="#pilates">Pilates</a>
             </li>
+            
             <li class="nav-item">
               <a class="nav-link" href="#">Serviços</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Localização</a>
+              <a class="nav-link" href="#localização">Localização</a>
             </li>
           </ul>
         </div>
@@ -77,9 +79,9 @@
 <!--menu arrumar o jeito que esta abrindo  e o tamanho da logo -->
     <div class="card-group">
       <div class="card">
-        
+        <div id="pilates" class="card-group"></div>
         <div class="card-body">
-          <h5 class="card-title">pilates  </h5>
+          <h5 class="card-title" class="nav-link" >pilates  </h5>
           <p class="card-text">
             Pilates  combina o Pilates tradicional com exercícios que fortalecem, melhoram a postura e a mobilidade para atividades diárias. Usando acessórios como bolas e elásticos, trabalha o corpo de forma integrada, prevenindo lesões e promovendo condicionamento completo.</p>
         </div>
@@ -155,19 +157,73 @@
          <p> Cada uma dessas terapias é adaptada às necessidades individuais, promovendo equilíbrio entre o corpo e a mente. Escolha a mais adequada para o seu objetivo e descubra os benefícios que essas técnicas podem trazer para sua saúde.</p>
         
       </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
     
-
-  </div><!-- /whatizapp e istagram-->
-  <a href="https://wa.me/5511974386850" target="_blank" class="whatsapp-btn">
-    <img src="img/zap.png" alt="WhatsApp" style="width: 50px; height: 50px;">
-  </a>
-  <a href="https://www.instagram.com/espacompilates?igsh=ZmJkOTBrYmN6OGlo" target="_blank" class="instagram-btn">
-    <img src="img/ff0fac1a-0787-4471-aff2-5ec04eda3974-removebg-preview.png" alt="Instagram" style="width: 50px; height: 50px;">
-  </a>
   
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Botões Flutuantes</title>
+        <style>
+          .floating-buttons {
+            position: fixed;
+            bottom: 20px; /* Distância da parte inferior da tela */
+            right: 20px;  /* Distância da lateral direita */
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Espaçamento entre os botões */
+            z-index: 1000; /* Garante que fique por cima de outros elementos */
+          }
+          .floating-buttons a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%; /* Torna os botões circulares */
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+          }
+          .floating-buttons a img {
+            width: 30px; /* Tamanho do ícone */
+            height: 30px;
+          }
+          .floating-buttons a:hover {
+            transform: scale(1.1); /* Aumenta o botão ao passar o mouse */
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+          }
+        </style>
+      </head>
+      <body>
+        <div class="floating-buttons">
+          <!-- Botão do WhatsApp -->
+          <a href="https://wa.me/5511974386850" target="_blank" style="background-color: #25D366;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+          </a>
+          <!-- Botão do Instagram -->
+          <a href="https://www.instagram.com/espacompilates?igsh=ZmJkOTBrYmN6OGlo" target="_blank" style="background-color: #E4405F;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+          </a>
+        </div>
+      </body>
+      </html>
+      
+
+
+
+
+
+
+    
   <body>
-    <p>Confira nossa localização no mapa abaixo:</p>
+    <div id="localização" class="card-group">
+      <p>Confira nossa localização no mapa abaixo:</p>
+    </div>
+  
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.746116579068!2d-46.55120092445894!3d-23.582640067276197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4236b59ac4af%3A0x7d0edb9fa8534c98!2sR.%20Conselheiro%20Justino%2C%20304%20-%20Campestre%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009070-720!5e0!3m2!1spt-BR!2sbr!4v1697035483084!5m2!1spt-BR!2sbr"
         width="600"
