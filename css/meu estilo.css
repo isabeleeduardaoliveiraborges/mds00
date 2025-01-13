@@ -1,10 +1,10 @@
-    body {
+
+  body {
       margin: 0;
       padding: 0;
-      background-image: url(''); /* Caminho para a imagem */
+      background-image: url(../img/fundo.jpg) ;
       background-size: cover; /* Faz a imagem preencher a tela */
       background-position: center; /* Centraliza a imagem */
-      background-repeat: no-repeat; /* Evita repetição da imagem */
       height: 100vh; /* Garante que a imagem ocupe toda a altura da tela */
     }
   
@@ -16,7 +16,7 @@
 }
 
 .navbar-toggler-icon {
-  color: #007bff;
+  color: #d7ff22;
 }
 
 @media (max-width: 768px) {
@@ -31,22 +31,11 @@
   }
 }
 
-/* Carrossel */
-.carousel-inner img {
-  height: 400px;
-  object-fit: cover;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-}
-
 /* Cards */
 .card-title {
   font-size: 1.25rem;
-  color: #007bff;
+  color: #d0df04;
+  text-align: center;
 }
 
 .card-text {
@@ -57,12 +46,12 @@
 /* Seções de informações */
 .row h2 {
   font-size: 1.5rem;
-  color: #007bff;
+  color: #fbff14;
 }
 
 .row p {
   font-size: 1rem;
-  color: #666;
+  color: #000000;
 }
 
 /* Botões de redes sociais */
@@ -87,11 +76,12 @@
 
 /* Mapa */
 iframe {
-  margin: 20px 0;
+  
   border: 0;
   width: 100%;
   max-width: 600px;
   height: 450px;
+  background-color: #fff9f9;
 }
 .logo-img {
       /* Ajuste o tamanho desejado */
@@ -102,7 +92,7 @@ iframe {
 
 /* Footer */
 footer {
-  background-color: #f8f9fa;
+  background-color: #346aa0;
   border-top: 2px solid #ddd;
   text-align: center;
   padding: 10px 0;
@@ -121,7 +111,7 @@ footer a:hover {
 
 .floating-buttons {
   position: fixed;
-  bottom: 20px; /* Distância da parte inferior da tela */
+  bottom: 110px; /* Distância da parte inferior da tela */
   right: 20px;  /* Distância da lateral direita */
   display: flex;
   flex-direction: column;
@@ -132,10 +122,10 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%; /* Torna os botões circulares */
-  background-color: white;
+  background-color: rgb(17, 17, 17);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -148,3 +138,37 @@ footer a:hover {
   transform: scale(1.1); /* Aumenta o botão ao passar o mouse */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
+.pilates-card {
+  background-color: #0080ff; /* Cor de fundo clara */
+
+}
+
+.terapias-card {
+  background-color: #0080ff; /* Cor de fundo um pouco mais escura */
+width: 10px;
+}
+
+.card {
+  border: none; /* Remove bordas adicionais (opcional) */
+  margin: 30px; /* Ajusta espaçamento entre cards (opcional) */
+  background-color: aqua;
+}
+
+
+
+
+.carousel {
+  width: 100vw; /* Ocupa 100% da largura da janela de visualização */
+height: 10%;
+}
+
+.carousel-inner img {
+  width: 10%; /* Garante que as imagens preencham o carrossel */
+  height: 10%; /* Mantém a proporção das imagens */
+}
+
+.card-title{
+  width: 30%;
+}
+
+
