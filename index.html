@@ -12,39 +12,54 @@
   
 <body>
 
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- menuu -->
   <header class="menu-header">
-    <div class="container d-flex align-items-center justify-content-between">
-      <!-- Logo -->
-      <div class="logo">
-        <a href="#">
-          <img src="img/image.png" alt="Logo" class="logo-img">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="img/image.png" alt="Logo" style="width: 50px; height: auto;">
         </a>
-      </div>
-      <!-- Botão e Menu -->
-      <nav class="navbar navbar-expand-lg">
+        <!-- Botão Responsivo -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav text-center">
-            <li class="nav-item">
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item active">
               <a class="nav-link" href="#">Início</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#pilates">Pilates</a>
             </li>
-            
             <li class="nav-item">
               <a class="nav-link" href="#">Serviços</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#localização">Localização</a>
             </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+            </li>
           </ul>
-        </div>
-      </nav>
-    </div>
+          
+      </div>
+    </nav>
   </header>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
 
   <div class="container marketing">
     <!-- Carrossel ajustar a imagem 1 -->
@@ -74,9 +89,8 @@
         <span class="visually-hidden">Próximo</span>
       </button>
     </div>
-
 <dir>
-<!--menu arrumar o jeito que esta abrindo  e o tamanho da logo -->
+<!--pilates e teraoias manuaia   -->
     <div class="card-group">
       <div class="card">
         <div id="pilates" class="card-group"></div>
@@ -100,7 +114,7 @@
       </div>
     </div>
   </dir>
-    <!-- cinco colunas de texto abaixo do carrossel -->
+    <!-- cinco colunas de texto de explicaçao  -->
     <div class="row mt-4">
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -112,7 +126,6 @@
           Indicada para aliviar tensões e melhorar a mobilidade, a liberação miofascial utiliza pressões específicas para tratar a fáscia, um tecido conectivo que pode causar dores e rigidez quando está tensionado.</p>
         
       </div><!-- /.col-lg-4 -->
-    
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
           <title>Placeholder</title>
@@ -123,7 +136,6 @@
           Ideal para combater o estresse e proporcionar relaxamento profundo. Essa técnica promove a circulação sanguínea, reduz tensões musculares e melhora o estado emocional.</p>
         
       </div><!-- /.col-lg-4 -->
-    
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
           <title>Placeholder</title>
@@ -134,7 +146,6 @@
           Massagem leve e ritmada que estimula o sistema linfático, auxiliando na redução de inchaços, eliminação de toxinas e melhora da circulação, sendo amplamente utilizada em tratamentos pós-cirúrgicos e estéticos</p>
         
       </div><!-- /.col-lg-4 -->
-    
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
           <title>Placeholder</title>
@@ -145,7 +156,6 @@
           Focada no alívio de dores, a analgesia utiliza técnicas específicas, como aplicação de calor, frio ou manipulações suaves, para reduzir desconfortos musculares e articulares</p>
         
       </div><!-- /.col-lg-4 -->
-    
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
           <title>Placeholder</title>
@@ -160,43 +170,6 @@
     
   
 
-      <!DOCTYPE html>
-      <html lang="en">
-      <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Botões Flutuantes</title>
-        <style>
-          .floating-buttons {
-            position: fixed;
-            bottom: 20px; /* Distância da parte inferior da tela */
-            right: 20px;  /* Distância da lateral direita */
-            display: flex;
-            flex-direction: column;
-            gap: 10px; /* Espaçamento entre os botões */
-            z-index: 1000; /* Garante que fique por cima de outros elementos */
-          }
-          .floating-buttons a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%; /* Torna os botões circulares */
-            background-color: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-decoration: none;
-            transition: transform 0.3s, box-shadow 0.3s;
-          }
-          .floating-buttons a img {
-            width: 30px; /* Tamanho do ícone */
-            height: 30px;
-          }
-          .floating-buttons a:hover {
-            transform: scale(1.1); /* Aumenta o botão ao passar o mouse */
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-          }
-        </style>
       </head>
       <body>
         <div class="floating-buttons">
@@ -211,19 +184,12 @@
         </div>
       </body>
       </html>
-      
-
-
-
-
-
-
-    
+  
   <body>
     <div id="localização" class="card-group">
       <p>Confira nossa localização no mapa abaixo:</p>
     </div>
-  
+    <!-- mapaaaa -->
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.746116579068!2d-46.55120092445894!3d-23.582640067276197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4236b59ac4af%3A0x7d0edb9fa8534c98!2sR.%20Conselheiro%20Justino%2C%20304%20-%20Campestre%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009070-720!5e0!3m2!1spt-BR!2sbr!4v1697035483084!5m2!1spt-BR!2sbr"
         width="600"
@@ -233,6 +199,7 @@
         referrerpolicy="no-referrer-when-downgrade">
     </iframe>
 </body>
+
   <!-- RODAPÉ -->
   <footer class="container">
     <p class="float-end"><a href="#">Voltar ao topo</a></p>

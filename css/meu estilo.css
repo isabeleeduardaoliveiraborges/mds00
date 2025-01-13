@@ -117,3 +117,34 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+
+.floating-buttons {
+  position: fixed;
+  bottom: 20px; /* Distância da parte inferior da tela */
+  right: 20px;  /* Distância da lateral direita */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espaçamento entre os botões */
+  z-index: 1000; /* Garante que fique por cima de outros elementos */
+}
+.floating-buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Torna os botões circulares */
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.floating-buttons a img {
+  width: 30px; /* Tamanho do ícone */
+  height: 30px;
+}
+.floating-buttons a:hover {
+  transform: scale(1.1); /* Aumenta o botão ao passar o mouse */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
